@@ -1,0 +1,172 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('./Leonardo_Phoenix_A_visually_captivating_hightech_background_fo_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    padding: 40px;
+    position: absolute;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Roboto";
+
+}
+
+p {
+    color: orange;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.listening {
+    animation: pulse 1s infinite;
+    background-color: #FF6347;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+}
+.glow {
+    box-shadow: 0 0 30px rgba(0, 198, 255, 0.9);
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+.btn {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+}
+.btn video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+.ai-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+/* .button{
+    background: none;
+    color: white;
+    transform: translate(850px,-350px);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}  */
+/* Modal Overlay */
